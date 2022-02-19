@@ -7,6 +7,7 @@
 Manage internal technical documentation that is enriched with live data accreted from your environment.
 
 -   [Getting Started](#getting-started)
+-   [Verification](#verification)
 -   [Design](#design)
 -   [License](#license)
 
@@ -14,6 +15,22 @@ Manage internal technical documentation that is enriched with live data accreted
 
 ```shell
 nvm use && make
+```
+
+## Verification
+
+### Linting
+
+-   [Prettier](https://prettier.io)
+
+```shell
+make lint
+```
+
+These rules can then be automatically applied:
+
+```shell
+make format
 ```
 
 ## Design
@@ -27,16 +44,6 @@ All interaction methods communicate with the server core.
 | `UI`        | A web based user interface written in a SPA framework that communicates with the server core over an api. |
 | `CLI`       | A command line user interface that communicates with the server core over an api.                         |
 | `REST`      |                                                                                                           |
-
-## Verification
-
-### Linting
-
--   [Prettier](https://prettier.io)
-
-```shell
-make lint
-```
 
 ### Domain Entities
 
