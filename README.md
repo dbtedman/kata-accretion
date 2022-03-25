@@ -71,26 +71,26 @@ All interaction methods communicate with the server core via the GraphQL API.
 
 ### Domain Entities
 
-| Entity                | Notes    |
-| :-------------------- | :------- |
-| `Application`         | (User)   |
-| `Application Service` | (User)   |
-| `Branch`              | (Gitlab) |
-| `Cluster`             | (Kube)   |
-| `Code Coverage`       | (Gitlab) |
-| `Coding Language`     | (Gitlab) |
-| `Deployment`          | (Kube)   |
-| `Environment`         |          |
-| `Issue`               | (Jira)   |
-| `Logs`                | (Kibana) |
-| `Merge Request`       | (Gitlab) |
-| `Owner`               | (Jira)   |
-| `Pipeline Status`     | (Gitlab) |
-| `Product`             | (User)   |
-| `Repository`          | (Gitlab) |
-| `Service`             | (User)   |
-| `Team`                |          |
-| `URL`                 | (Kube)   |
+| Entity                | Notes |
+| :-------------------- | :---- |
+| `Application Service` |       |
+| `Application`         |       |
+| `Branch`              |       |
+| `Cluster`             |       |
+| `Code Coverage`       |       |
+| `Coding Language`     |       |
+| `Deployment`          |       |
+| `Environment`         |       |
+| `Issue`               |       |
+| `Logs`                |       |
+| `Merge Request`       |       |
+| `Owner`               |       |
+| `Pipeline Status`     |       |
+| `Product`             |       |
+| `Repository`          |       |
+| `Service`             |       |
+| `Team`                |       |
+| `URL`                 |       |
 
 ### Domain Use Cases
 
