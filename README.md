@@ -34,6 +34,12 @@ These rules can then be automatically applied:
 make format
 ```
 
+### Unit Testing
+
+```shell
+make test
+```
+
 ## Design
 
 ### Interaction
