@@ -45,15 +45,15 @@ make test
 
 ### Repository Structure
 
-| Directory             | Notes                                                                                           |
-| :-------------------- | :---------------------------------------------------------------------------------------------- |
-| `./.github/workflows` | GitHub Actions workflow definitions.                                                            |
-| `./cmd/accretion`     | Contains the `main` package which defines how the `accretion` command line interface functions. |
-| `./graphql`           |                                                                                                 |
-| `./internal/domain`   |                                                                                                 |
-| `./internal/gateway`  | Defines how the `domain` interfaces with external systems.                                      |
-| `./spa`               | ReactJS TypeScript source code.                                                                 |
-| `./`                  |                                                                                                 |
+| Directory                                  | Notes                                                                                           |
+| :----------------------------------------- | :---------------------------------------------------------------------------------------------- |
+| [./.github/workflows](./.github/workflows) | GitHub Actions workflow definitions.                                                            |
+| [./cmd/accretion](./cmd/accretion)         | Contains the `main` package which defines how the `accretion` command line interface functions. |
+| [./graphql](./graphql)                     |                                                                                                 |
+| [./internal/domain](./internal/domain)     |                                                                                                 |
+| [./internal/gateway](./internal/gateway)   | Defines how the `domain` interfaces with external systems.                                      |
+| [./spa](./spa)                             | ReactJS TypeScript source code.                                                                 |
+| [./](./)                                   |                                                                                                 |
 
 ### Interaction
 
