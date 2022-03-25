@@ -23,6 +23,7 @@ nvm use && make && ./accretion
 ### Linting
 
 -   [Prettier](https://prettier.io)
+-   [gofmt](https://pkg.go.dev/cmd/gofmt)
 
 ```shell
 make lint
@@ -46,11 +47,11 @@ make test
 
 All interaction methods communicate with the server core via the GraphQL API.
 
-| Entity    | Notes                                                                                                                   |
-| :-------- | :---------------------------------------------------------------------------------------------------------------------- |
-| `SPA`     | A ReactJS client application that interacts with the server core via GraphQL.                                           |
-| `CLI`     | The CLI is used for both running the server core and for interacting with the server core over GraphQL.                 |
-| `GraphQL` | The channel of communication with the server core used by all other interaction methods, along with 3rd party services. |
+| Interaction | Notes                                                                                                                   |
+| :---------- | :---------------------------------------------------------------------------------------------------------------------- |
+| `SPA`       | A ReactJS client application that interacts with the server core via GraphQL.                                           |
+| `CLI`       | The CLI is used for both running the server core and for interacting with the server core over GraphQL.                 |
+| `GraphQL`   | The channel of communication with the server core used by all other interaction methods, along with 3rd party services. |
 
 ### Server Core
 
@@ -99,7 +100,8 @@ All interaction methods communicate with the server core via the GraphQL API.
 
 ### Persistence
 
-The source of truth is a series of `HistoricalFact` events that are processed to form multiple projections including a `SearchProjection` and `GraphProjection`. Each projection is specifically designed to support different use cases.
+The source of truth is a series of `HistoricalFact` events that are processed to form multiple projections including
+a `SearchProjection` and `GraphProjection`. Each projection is specifically designed to support different use cases.
 
 ### Security Mitigations
 
