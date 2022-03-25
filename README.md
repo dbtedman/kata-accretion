@@ -44,13 +44,17 @@ make test
 
 ### Interaction
 
-All interaction methods communicate with the server core.
+All interaction methods communicate with the server core via the GraphQL API.
 
-| Interaction | Notes                                                                                                     |
-| :---------- | :-------------------------------------------------------------------------------------------------------- |
-| `UI`        | A web based user interface written in a SPA framework that communicates with the server core over an api. |
-| `CLI`       | A command line user interface that communicates with the server core over an api.                         |
-| `REST`      |                                                                                                           |
+| Entity | Notes                                                                         |
+|:-------|:------------------------------------------------------------------------------|
+| `SPA`     | A ReactJS client application that interacts with the server core via GraphQL. |
+| `CLI`     | The CLI is used for both running the server core and for interacting with the server core over GraphQL.                                                                              |
+| `GraphQL`     |  The channel of communication with the server core used by all other interaction methods, along with 3rd party services.                                                                             |
+
+### Server Core
+
+> 🚧 Placeholder
 
 ### Domain Entities
 
@@ -77,15 +81,25 @@ All interaction methods communicate with the server core.
 
 ### Domain Use Cases
 
-| Use Case | Notes |
-| :------- | :---- |
-| ` `      |       |
+| Use Case                 | Notes                                                                                     |
+|:-------------------------|:------------------------------------------------------------------------------------------|
+| `AccreteData*`           | A series of usecases associated with automatically acreeting data from different sources. |
+| `BrowseResources`        | |
+| `ManuallyUpdateResource` | Append data to resources manually.                                                        |
+| `SearchForResource`      | Perform a search query over the data.                                                     |
 
 ### Gateways
 
-| Gateway | Notes |
-| :------ | :---- |
-| ` `     |       |
+| Gateway      | Notes |
+|:-------------| :---- |
+| `GitLab`     |       |
+| `Jira`       |       |
+| `Kibana`     |       |
+| `Kubernetes` |       |
+
+### Persistence
+
+The source of truth is a series of `HistoricalFact` events that are processed to form multiple projections including a `SearchProjection` and `GraphProjection`. Each projection is specifically designed to support different use cases.
 
 ### Security Mitigations
 
