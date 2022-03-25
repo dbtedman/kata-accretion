@@ -6,10 +6,10 @@ install:
 	@pnpm install && go mod vendor
 
 lint:
-	@pnpm run lint && gofmt -l ./cmd ./internal
+	@pnpm run lint && gofmt -l ./cmd ./internal ./graphql
 
 format:
-	@pnpm run format && gofmt -w ./cmd ./internal
+	@pnpm run format && gofmt -w ./cmd ./internal ./graphql
 
 test:
 	@go test -race -cover -coverprofile=coverage.txt ./...

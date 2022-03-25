@@ -43,6 +43,18 @@ make test
 
 ## Design
 
+### Repository Structure
+
+| Directory             | Notes                                                                                           |
+| :-------------------- | :---------------------------------------------------------------------------------------------- |
+| `./.github/workflows` | GitHub Actions workflow definitions.                                                            |
+| `./cmd/accretion`     | Contains the `main` package which defines how the `accretion` command line interface functions. |
+| `./graphql`           |                                                                                                 |
+| `./internal/domain`   |                                                                                                 |
+| `./internal/gateway`  | Defines how the `domain` interfaces with external systems.                                      |
+| `./spa`               | ReactJS TypeScript source code.                                                                 |
+| `./`                  |                                                                                                 |
+
 ### Interaction
 
 All interaction methods communicate with the server core via the GraphQL API.
@@ -59,35 +71,35 @@ All interaction methods communicate with the server core via the GraphQL API.
 
 ### Domain Entities
 
-| Entity               | Notes    |
-| :------------------- | :------- |
-| `Application`        | (User)   |
-| `ApplicationService` | (User)   |
-| `Branch`             | (Gitlab) |
-| `Cluster`            | (Kube)   |
-| `CodeCoverage`       | (Gitlab) |
-| `CodingLanguage`     | (Gitlab) |
-| `Deployment`         | (Kube)   |
-| `Environment`        |          |
-| `Issue`              | (Jira)   |
-| `Logs`               | (Kibana) |
-| `MergeRequest`       | (Gitlab) |
-| `Owner`              | (Jira)   |
-| `Pipeline Status`    | (Gitlab) |
-| `Product`            | (User)   |
-| `Repository`         | (Gitlab) |
-| `Service`            | (User)   |
-| `Team`               |          |
-| `URL`                | (Kube)   |
+| Entity                | Notes    |
+| :-------------------- | :------- |
+| `Application`         | (User)   |
+| `Application Service` | (User)   |
+| `Branch`              | (Gitlab) |
+| `Cluster`             | (Kube)   |
+| `Code Coverage`       | (Gitlab) |
+| `Coding Language`     | (Gitlab) |
+| `Deployment`          | (Kube)   |
+| `Environment`         |          |
+| `Issue`               | (Jira)   |
+| `Logs`                | (Kibana) |
+| `Merge Request`       | (Gitlab) |
+| `Owner`               | (Jira)   |
+| `Pipeline Status`     | (Gitlab) |
+| `Product`             | (User)   |
+| `Repository`          | (Gitlab) |
+| `Service`             | (User)   |
+| `Team`                |          |
+| `URL`                 | (Kube)   |
 
 ### Domain Use Cases
 
-| Use Case                 | Notes                                                                                     |
-| :----------------------- | :---------------------------------------------------------------------------------------- |
-| `AccreteData*`           | A series of usecases associated with automatically acreeting data from different sources. |
-| `BrowseResources`        |                                                                                           |
-| `ManuallyUpdateResource` | Append data to resources manually.                                                        |
-| `SearchForResource`      | Perform a search query over the data.                                                     |
+| Use Case                   | Notes                                                                                     |
+| :------------------------- | :---------------------------------------------------------------------------------------- |
+| `Accrete Data *`           | A series of usecases associated with automatically acreeting data from different sources. |
+| `Browse Resources`         |                                                                                           |
+| `Manually Update Resource` | Append data to resources manually.                                                        |
+| `Search for Resource`      | Perform a search query over the data.                                                     |
 
 ### Gateways
 
