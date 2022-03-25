@@ -46,11 +46,11 @@ make test
 
 All interaction methods communicate with the server core via the GraphQL API.
 
-| Entity | Notes                                                                         |
-|:-------|:------------------------------------------------------------------------------|
-| `SPA`     | A ReactJS client application that interacts with the server core via GraphQL. |
-| `CLI`     | The CLI is used for both running the server core and for interacting with the server core over GraphQL.                                                                              |
-| `GraphQL`     |  The channel of communication with the server core used by all other interaction methods, along with 3rd party services.                                                                             |
+| Entity    | Notes                                                                                                                   |
+| :-------- | :---------------------------------------------------------------------------------------------------------------------- |
+| `SPA`     | A ReactJS client application that interacts with the server core via GraphQL.                                           |
+| `CLI`     | The CLI is used for both running the server core and for interacting with the server core over GraphQL.                 |
+| `GraphQL` | The channel of communication with the server core used by all other interaction methods, along with 3rd party services. |
 
 ### Server Core
 
@@ -82,16 +82,16 @@ All interaction methods communicate with the server core via the GraphQL API.
 ### Domain Use Cases
 
 | Use Case                 | Notes                                                                                     |
-|:-------------------------|:------------------------------------------------------------------------------------------|
+| :----------------------- | :---------------------------------------------------------------------------------------- |
 | `AccreteData*`           | A series of usecases associated with automatically acreeting data from different sources. |
-| `BrowseResources`        | |
+| `BrowseResources`        |                                                                                           |
 | `ManuallyUpdateResource` | Append data to resources manually.                                                        |
 | `SearchForResource`      | Perform a search query over the data.                                                     |
 
 ### Gateways
 
 | Gateway      | Notes |
-|:-------------| :---- |
+| :----------- | :---- |
 | `GitLab`     |       |
 | `Jira`       |       |
 | `Kibana`     |       |
