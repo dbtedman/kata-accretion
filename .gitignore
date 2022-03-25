@@ -3,3 +3,9 @@
 
 # Don't include external dependencies
 /node_modules/
+
+# Don't include build output
+/accretion
+
+# Don't include code coverage
+/coverage.txt

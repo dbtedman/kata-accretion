@@ -3,6 +3,7 @@
 > ⚠️ WARNING: Not production ready code.
 
 [![CI GitHub Pipeline](https://img.shields.io/github/workflow/status/dbtedman/kata-accretion/ci?style=for-the-badge&logo=github&label=ci)](https://github.com/dbtedman/kata-accretion/actions/workflows/ci.yml)
+![language: go](https://img.shields.io/badge/language-go-blue.svg?style=for-the-badge&logo=go)
 
 Manage internal technical documentation that is enriched with live data accreted from your environment.
 
@@ -14,7 +15,7 @@ Manage internal technical documentation that is enriched with live data accreted
 ## Getting Started
 
 ```shell
-nvm use && make
+nvm use && make && ./accretion
 ```
 
 ## Verification

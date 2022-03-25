@@ -1,12 +1,18 @@
 .DEFAULT_GOAL := all
 
-all: install lint
+all: install lint test build
 
 install:
-	@pnpm install
+	@pnpm install && go mod vendor
 
 lint:
-	@pnpm run lint
+	@pnpm run lint && gofmt -l ./cmd ./internal
 
 format:
-	@pnpm run format
+	@pnpm run format && gofmt -w ./cmd ./internal
+
+test:
+	@go test -race -cover -coverprofile=coverage.txt ./...
+
+build:
+	@go build -race -mod vendor -o accretion ./cmd/accretion
