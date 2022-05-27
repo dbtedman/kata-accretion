@@ -46,25 +46,47 @@ make test
 
 ### Repository Structure
 
-| Directory                                  | Notes                                                                                           |
-| :----------------------------------------- | :---------------------------------------------------------------------------------------------- |
-| [./.github/workflows](./.github/workflows) | GitHub Actions workflow definitions.                                                            |
-| [./cmd/accretion](./cmd/accretion)         | Contains the `main` package which defines how the `accretion` command line interface functions. |
-| [./graphql](./graphql)                     |                                                                                                 |
-| [./internal/domain](./internal/domain)     |                                                                                                 |
-| [./internal/gateway](./internal/gateway)   | Defines how the `domain` interfaces with external systems.                                      |
-| [./spa](./spa)                             | ReactJS TypeScript source code.                                                                 |
-| [./](./)                                   |                                                                                                 |
+#### [./.github/workflows](./.github/workflows)
+
+GitHub Actions workflow definitions.
+
+#### [./cmd/accretion](./cmd/accretion)
+
+Contains the `main` package which defines how the `accretion` command line interface functions.
+
+#### [./graphql](./graphql)
+
+> 🚧 Placeholder
+
+#### [./internal/domain](./internal/domain)
+
+> 🚧 Placeholder
+
+#### [./internal/gateway](./internal/gateway)
+
+Defines how the `domain` interfaces with external systems.
+
+#### [./spa](./spa)
+
+ReactJS TypeScript source code.
+
+#### [./](./)
 
 ### Interaction
 
 All interaction methods communicate with the server core via the GraphQL API.
 
-| Interaction | Notes                                                                                                                   |
-| :---------- | :---------------------------------------------------------------------------------------------------------------------- |
-| `SPA`       | A ReactJS client application that interacts with the server core via GraphQL.                                           |
-| `CLI`       | The CLI is used for both running the server core and for interacting with the server core over GraphQL.                 |
-| `GraphQL`   | The channel of communication with the server core used by all other interaction methods, along with 3rd party services. |
+#### `SPA`
+
+A ReactJS client application that interacts with the server core via GraphQL.
+
+#### `CLI`
+
+The CLI is used for both running the server core and for interacting with the server core over GraphQL.
+
+#### `GraphQL`
+
+The channel of communication with the server core used by all other interaction methods, along with 3rd party services.
 
 ### Server Core
 
@@ -142,7 +164,8 @@ _Placeholder_
 
 #### [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)
 
-[Snyk](https://snyk.io) and [Github Security](https://github.com/features/security) scan Gradle and NPM dependencies for know vulnerabilities and create pull requests to resolve the vulnerabilities when available.
+[Snyk](https://snyk.io) and [Github Security](https://github.com/features/security) scan Gradle and NPM dependencies for
+know vulnerabilities and create pull requests to resolve the vulnerabilities when available.
 
 #### [A07:2021-Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
 
