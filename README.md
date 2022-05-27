@@ -8,10 +8,10 @@
 
 Manage internal technical documentation that is enriched with live data accreted from your environment.
 
-- [Getting Started](#getting-started)
-- [Verification](#verification)
-- [Design](#design)
-- [License](#license)
+-   [Getting Started](#getting-started)
+-   [Verification](#verification)
+-   [Design](#design)
+-   [License](#license)
 
 ## Getting Started
 
@@ -23,8 +23,8 @@ nvm use && make && ./accretion
 
 ### Linting
 
-- [Prettier](https://prettier.io)
-- [gofmt](https://pkg.go.dev/cmd/gofmt)
+-   [Prettier](https://prettier.io)
+-   [gofmt](https://pkg.go.dev/cmd/gofmt)
 
 ```shell
 make lint
