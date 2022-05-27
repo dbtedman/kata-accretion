@@ -27,7 +27,7 @@ jobs:
                   cache: "pnpm"
             - uses: "actions/setup-go@v2"
               with:
-                  go-version: "1.17"
+                  go-version: "1.18"
             - uses: "snyk/actions/setup@master"
             - run: "make install"
             - run: "snyk test --all-projects"
@@ -56,6 +56,6 @@ jobs:
                   cache: "pnpm"
             - uses: "actions/setup-go@v2"
               with:
-                  go-version: "1.17"
+                  go-version: "1.18"
             - run: "make install"
             - uses: "github/codeql-action/analyze@v2"
