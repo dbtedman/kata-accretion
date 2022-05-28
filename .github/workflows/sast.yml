@@ -2,7 +2,9 @@
 name: "sast"
 
 on:
-    pull_request: {}
+    pull_request:
+        branches-ignore:
+            - "main"
     push:
         branches:
             - "main"

@@ -92,46 +92,101 @@ The channel of communication with the server core used by all other interaction 
 
 > 🚧 Placeholder
 
-### Domain Entities
+### Domain
 
-| Entity                | Notes |
-| :-------------------- | :---- |
-| `Application Service` |       |
-| `Application`         |       |
-| `Branch`              |       |
-| `Cluster`             |       |
-| `Code Coverage`       |       |
-| `Coding Language`     |       |
-| `Deployment`          |       |
-| `Environment`         |       |
-| `Issue`               |       |
-| `Logs`                |       |
-| `Merge Request`       |       |
-| `Owner`               |       |
-| `Pipeline Status`     |       |
-| `Product`             |       |
-| `Repository`          |       |
-| `Service`             |       |
-| `Team`                |       |
-| `URL`                 |       |
+#### Application Service
 
-### Domain Use Cases
+> 🚧 Placeholder
 
-| Use Case                   | Notes                                                                                     |
-| :------------------------- | :---------------------------------------------------------------------------------------- |
-| `Accrete Data *`           | A series of usecases associated with automatically acreeting data from different sources. |
-| `Browse Resources`         |                                                                                           |
-| `Manually Update Resource` | Append data to resources manually.                                                        |
-| `Search for Resource`      | Perform a search query over the data.                                                     |
+#### Application
+
+> 🚧 Placeholder
+
+#### Branch
+
+> 🚧 Placeholder
+
+#### Cluster
+
+> 🚧 Placeholder
+
+#### Code Coverage
+
+> 🚧 Placeholder
+
+#### Code Coverage
+
+> 🚧 Placeholder
+
+#### Coding Language
+
+> 🚧 Placeholder
+
+#### Deployment
+
+> 🚧 Placeholder
+
+#### Environment
+
+> 🚧 Placeholder
+
+#### Issue
+
+> 🚧 Placeholder
+
+#### Logs
+
+> 🚧 Placeholder
+
+#### Merge Request
+
+> 🚧 Placeholder
+
+#### Owner
+
+> 🚧 Placeholder
+
+#### Pipeline Status
+
+> 🚧 Placeholder
+
+#### Product
+
+> 🚧 Placeholder
+
+#### Repository
+
+> 🚧 Placeholder
+
+#### Service
+
+> 🚧 Placeholder
+
+#### Team
+
+> 🚧 Placeholder
+
+#### URL
+
+> 🚧 Placeholder
 
 ### Gateways
 
-| Gateway      | Notes |
-| :----------- | :---- |
-| `GitLab`     |       |
-| `Jira`       |       |
-| `Kibana`     |       |
-| `Kubernetes` |       |
+#### GitLab
+
+> 🚧 Placeholder
+
+#### Jira
+
+> 🚧 Placeholder
+
+#### Kibana
+
+> 🚧 Placeholder
+
+#### Kubernetes
+
+> 🚧 Placeholder
 
 ### Persistence
 
