@@ -1,6 +1,7 @@
-# [Kata](https://github.com/dbtedman/kata) // [Accretion](https://github.com/dbtedman/kata-accretion)
+# [Accretion](https://github.com/dbtedman/kata-accretion)
 
-> ⚠️ WARNING: Not production ready code.
+> **⚠️ WARNING:** Not production ready code, instead a [Code Kata](https://github.com/dbtedman#code-kata) intended to
+> hone my programming skills through practice and repetition.
 
 [![CI GitHub Pipeline](https://img.shields.io/github/workflow/status/dbtedman/kata-accretion/ci?style=for-the-badge&logo=github&label=ci)](https://github.com/dbtedman/kata-accretion/actions/workflows/ci.yml)
 [![sast workflow status](https://img.shields.io/github/workflow/status/dbtedman/kata-accretion/sast?style=for-the-badge&logo=github&label=sast)](https://github.com/dbtedman/kata-accretion/actions/workflows/sast.yml)
@@ -11,6 +12,7 @@ Manage internal technical documentation that is enriched with live data accreted
 -   [Getting Started](#getting-started)
 -   [Verification](#verification)
 -   [Design](#design)
+-   [References](#references)
 -   [License](#license)
 
 ## Getting Started
@@ -235,6 +237,10 @@ _Placeholder_
 _Placeholder_
 
 #### [A10:2021-Server-Side Request Forgery](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/)
+
+_Placeholder_
+
+## References
 
 _Placeholder_
 
