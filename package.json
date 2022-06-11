@@ -7,6 +7,6 @@
   },
   "devDependencies": {
     "prettier": "2.6.1",
-    "sort-package-json": "1.55.0"
+    "sort-package-json": "1.57.0"
   }
 }
