@@ -5,7 +5,8 @@
 
 [![CI GitHub Pipeline](https://img.shields.io/github/workflow/status/dbtedman/kata-accretion/ci?style=for-the-badge&logo=github&label=ci)](https://github.com/dbtedman/kata-accretion/actions/workflows/ci.yml)
 [![sast workflow status](https://img.shields.io/github/workflow/status/dbtedman/kata-accretion/sast?style=for-the-badge&logo=github&label=sast)](https://github.com/dbtedman/kata-accretion/actions/workflows/sast.yml)
-![language: go](https://img.shields.io/badge/language-go-blue.svg?style=for-the-badge&logo=go)
+![languages: go and typescript](https://img.shields.io/badge/languages-go%20and%20typescript-blue.svg?style=for-the-badge)
+![framework: vue](https://img.shields.io/badge/framework-vue-blue.svg?style=for-the-badge)
 
 Manage internal technical documentation that is enriched with live data accreted from your environment.
 
@@ -48,31 +49,14 @@ make test
 
 ### Repository Structure
 
-#### [./.github/workflows](./.github/workflows)
-
-GitHub Actions workflow definitions.
-
-#### [./cmd/accretion](./cmd/accretion)
-
-Contains the `main` package which defines how the `accretion` command line interface functions.
-
-#### [./graphql](./graphql)
-
-> 🚧 Placeholder
-
-#### [./internal/domain](./internal/domain)
-
-> 🚧 Placeholder
-
-#### [./internal/gateway](./internal/gateway)
-
-Defines how the `domain` interfaces with external systems.
-
-#### [./spa](./spa)
-
-ReactJS TypeScript source code.
-
-#### [./](./)
+| Directory                                  | Purpose                                                                                         |
+| ------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| [./.github/workflows](./.github/workflows) | GitHub Actions workflow definitions.                                                            |
+| [./cmd/accretion](./cmd/accretion)         | Contains the `main` package which defines how the `accretion` command line interface functions. |
+| [./graphql](./graphql)                     |                                                                                                 |
+| [./internal/domain](./internal/domain)     | Code that defines the core application logic.                                                   |
+| [./internal/gateway](./internal/gateway)   | Defines how the `domain` interfaces with external systems.                                      |
+| [./spa](./spa)                             | Vue TypeScript source code.                                                                     |
 
 ### Interaction
 
@@ -80,7 +64,7 @@ All interaction methods communicate with the server core via the GraphQL API.
 
 #### `SPA`
 
-A ReactJS client application that interacts with the server core via GraphQL.
+A Vue client application that interacts with the server core via GraphQL.
 
 #### `CLI`
 
@@ -91,102 +75,6 @@ The CLI is used for both running the server core and for interacting with the se
 The channel of communication with the server core used by all other interaction methods, along with 3rd party services.
 
 ### Server Core
-
-> 🚧 Placeholder
-
-### Domain
-
-#### Application Service
-
-> 🚧 Placeholder
-
-#### Application
-
-> 🚧 Placeholder
-
-#### Branch
-
-> 🚧 Placeholder
-
-#### Cluster
-
-> 🚧 Placeholder
-
-#### Code Coverage
-
-> 🚧 Placeholder
-
-#### Code Coverage
-
-> 🚧 Placeholder
-
-#### Coding Language
-
-> 🚧 Placeholder
-
-#### Deployment
-
-> 🚧 Placeholder
-
-#### Environment
-
-> 🚧 Placeholder
-
-#### Issue
-
-> 🚧 Placeholder
-
-#### Logs
-
-> 🚧 Placeholder
-
-#### Merge Request
-
-> 🚧 Placeholder
-
-#### Owner
-
-> 🚧 Placeholder
-
-#### Pipeline Status
-
-> 🚧 Placeholder
-
-#### Product
-
-> 🚧 Placeholder
-
-#### Repository
-
-> 🚧 Placeholder
-
-#### Service
-
-> 🚧 Placeholder
-
-#### Team
-
-> 🚧 Placeholder
-
-#### URL
-
-> 🚧 Placeholder
-
-### Gateways
-
-#### GitLab
-
-> 🚧 Placeholder
-
-#### Jira
-
-> 🚧 Placeholder
-
-#### Kibana
-
-> 🚧 Placeholder
-
-#### Kubernetes
 
 > 🚧 Placeholder
 
