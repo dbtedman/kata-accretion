@@ -58,6 +58,10 @@ make test
 | [./internal/gateway](./internal/gateway)   | Defines how the `domain` interfaces with external systems.                                      |
 | [./spa](./spa)                             | Vue TypeScript source code.                                                                     |
 
+### Diagrams
+
+![](./docs/structurizr-Diagram1.svg)
+
 ### Interaction
 
 All interaction methods communicate with the server core via the GraphQL API.
@@ -130,7 +134,8 @@ _Placeholder_
 
 ## References
 
-_Placeholder_
+-   2022-06-26 [C4 Model / Core Diagrams](https://c4model.com/#CoreDiagrams)
+-   2022-06-26 [Getting started with Structurizr Lite](https://dev.to/simonbrown/getting-started-with-structurizr-lite-27d0)
 
 ## License
 

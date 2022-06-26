@@ -16,3 +16,6 @@ test:
 
 build:
 	@go build -race -mod vendor -o accretion ./cmd/accretion
+
+diagrams:
+	@structurizr-cli export --workspace ./workspace.dsl --output ./docs --format plantuml/structurizr && plantuml -tsvg ./docs/*.puml

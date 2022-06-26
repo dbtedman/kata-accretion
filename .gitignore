@@ -10,3 +10,6 @@
 
 # Don't include code coverage
 /coverage.txt
+
+# Don't include intermediate diagram configuration
+/docs/*.puml
