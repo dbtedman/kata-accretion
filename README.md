@@ -26,9 +26,6 @@ nvm use && make && ./accretion
 
 ### Linting
 
--   [Prettier](https://prettier.io)
--   [gofmt](https://pkg.go.dev/cmd/gofmt)
-
 ```shell
 make lint
 ```
@@ -40,9 +37,6 @@ make format
 ```
 
 ### Unit Testing
-
--   go test
--   [Vitest](https://vitest.dev)
 
 ```shell
 make test
@@ -133,7 +127,13 @@ _Placeholder_
 
 ## References
 
-_Placeholder_
+-   [Gofmt](https://pkg.go.dev/cmd/gofmt)
+-   [Pinia](https://pinia.vuejs.org)
+-   [Prettier](https://prettier.io)
+-   [Vite](https://vitejs.dev)
+-   [Vitest](https://vitest.dev)
+-   [Vue Router](https://router.vuejs.org)
+-   [Vue](https://vuejs.org)
 
 ## License
 

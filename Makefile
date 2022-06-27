@@ -12,7 +12,7 @@ format:
 	@pnpm run format && gofmt -w ./cmd ./internal ./graphql
 
 test:
-	@pnpm run test:unit run && go test -race -cover -coverprofile=coverage.txt ./...
+	@pnpm run test:unit run && pnpm run test:e2e:ci && go test -race -cover -coverprofile=coverage.txt ./...
 
 build:
 	@pnpm run build && go build -race -mod vendor -o accretion ./cmd/accretion
