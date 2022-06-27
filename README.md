@@ -41,6 +41,9 @@ make format
 
 ### Unit Testing
 
+-   go test
+-   [Vitest](https://vitest.dev)
+
 ```shell
 make test
 ```

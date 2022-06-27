@@ -1,0 +1,12 @@
+{
+    "extends": "@vue/tsconfig/tsconfig.web.json",
+    "include": ["env.d.ts", "spa/**/*", "spa/**/*.vue"],
+    "exclude": ["spa/**/__tests__/*"],
+    "compilerOptions": {
+        "composite": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./spa/*"]
+        }
+    }
+}
