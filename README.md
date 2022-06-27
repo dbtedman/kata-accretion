@@ -42,34 +42,25 @@ make format
 make test
 ```
 
+### E2E Testing
+
+```shell
+pnpm run test:e2e
+```
+
 ## Design
 
 ### Repository Structure
 
-| Directory                                  | Purpose                                                                                         |
-| ------------------------------------------ | ----------------------------------------------------------------------------------------------- |
-| [./.github/workflows](./.github/workflows) | GitHub Actions workflow definitions.                                                            |
-| [./cmd/accretion](./cmd/accretion)         | Contains the `main` package which defines how the `accretion` command line interface functions. |
-| [./graphql](./graphql)                     |                                                                                                 |
-| [./internal/domain](./internal/domain)     | Code that defines the core application logic.                                                   |
-| [./internal/gateway](./internal/gateway)   | Defines how the `domain` interfaces with external systems.                                      |
-| [./spa](./spa)                             | Vue TypeScript source code.                                                                     |
-
-### Interaction
-
-All interaction methods communicate with the server core via the GraphQL API.
-
-#### `SPA`
-
-A Vue client application that interacts with the server core via GraphQL.
-
-#### `CLI`
-
-The CLI is used for both running the server core and for interacting with the server core over GraphQL.
-
-#### `GraphQL`
-
-The channel of communication with the server core used by all other interaction methods, along with 3rd party services.
+| Directory             | Purpose                                                                                                                 |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `./.github/workflows` | GitHub Actions workflow definitions.                                                                                    |
+| `./cmd/accretion`     | The CLI is used for both running the server core and for interacting with the server core over GraphQL.                 |
+| `./cypress`           |                                                                                                                         |
+| `./graphql`           | The channel of communication with the server core used by all other interaction methods, along with 3rd party services. |
+| `./internal/domain`   | Code that defines the core application logic.                                                                           |
+| `./internal/gateway`  | Defines how the `domain` interfaces with external systems.                                                              |
+| `./spa`               | A Vue client application that interacts with the server core via GraphQL.                                               |
 
 ### Server Core
 
