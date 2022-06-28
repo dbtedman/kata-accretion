@@ -1,125 +1,59 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "@/component/HelloWorld/HelloWorld.vue";
+import { RouterView } from "vue-router";
+import TopBar from "@/component/TopBar/TopBar.vue";
+import SideBar from "@/component/SideBar/SideBar.vue";
+import PageFooter from "@/component/PageFooter/PageFooter.vue";
 </script>
 
 <template>
-    <header>
-        <img
-            alt="Vue logo"
-            class="logo"
-            src="@/component/App/assets/logo.svg"
-            width="125"
-            height="125"
-        />
-
-        <div class="wrapper">
-            <HelloWorld msg="You did it!" />
-
-            <nav>
-                <RouterLink to="/">Home</RouterLink>
-                <RouterLink to="/about">About</RouterLink>
-            </nav>
+    <TopBar />
+    <div class="side-bar-router-view">
+        <SideBar />
+        <div class="router-view-footer">
+            <div class="router-view">
+                <RouterView />
+            </div>
+            <PageFooter />
         </div>
-    </header>
-
-    <RouterView />
+    </div>
 </template>
 
-<style>
-@import "@/component/App/assets/base.css";
+<style lang="scss">
+@import "./spa/theme/colours";
+@import "./spa/theme/fonts";
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    font-family: $body-font-family;
+    color: $colour-foreground-text;
+}
 
 #app {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-
-    font-weight: normal;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    flex-direction: column;
 }
 
-header {
-    line-height: 1.5;
-    max-height: 100vh;
+.side-bar-router-view {
+    background-color: $colour-background;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
 
-.logo {
-    display: block;
-    margin: 0 auto 2rem;
+.router-view-footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
-a,
-.green {
-    text-decoration: none;
-    color: hsla(160, 100%, 37%, 1);
-    transition: 0.4s;
-}
-
-@media (hover: hover) {
-    a:hover {
-        background-color: hsla(160, 100%, 37%, 0.2);
-    }
-}
-
-nav {
-    width: 100%;
-    font-size: 12px;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-    color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-    background-color: transparent;
-}
-
-nav a {
-    display: inline-block;
-    padding: 0 1rem;
-    border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-    border: 0;
-}
-
-@media (min-width: 1024px) {
-    body {
-        display: flex;
-        place-items: center;
-    }
-
-    #app {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 0 2rem;
-    }
-
-    header {
-        display: flex;
-        place-items: center;
-        padding-right: calc(var(--section-gap) / 2);
-    }
-
-    header .wrapper {
-        display: flex;
-        place-items: flex-start;
-        flex-wrap: wrap;
-    }
-
-    .logo {
-        margin: 0 2rem 0 0;
-    }
-
-    nav {
-        text-align: left;
-        margin-left: -1rem;
-        font-size: 1rem;
-
-        padding: 1rem 0;
-        margin-top: 1rem;
-    }
+.router-view {
+    flex: 1;
 }
 </style>
