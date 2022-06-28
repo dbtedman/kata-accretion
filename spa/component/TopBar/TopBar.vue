@@ -4,8 +4,8 @@
     <header class="top-bar">
         <div class="logo-container">Accretion Logo</div>
         <div class="top-bar-left-right">
-            <div class="top-bar-left">TopBar Left</div>
-            <div class="top-bar-right">TopBar Right</div>
+            <div class="top-bar-left">Search/Filter</div>
+            <div class="top-bar-right">Account/Notifications</div>
         </div>
     </header>
 </template>

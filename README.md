@@ -118,6 +118,8 @@ _Placeholder_
 
 ## References
 
+-   [Add Icons with Vue](https://fontawesome.com/docs/web/use-with/vue/add-icons)
+-   [Fontawesome Icons](https://fontawesome.com/icons)
 -   [Gofmt](https://pkg.go.dev/cmd/gofmt)
 -   [Pinia](https://pinia.vuejs.org)
 -   [Prettier](https://prettier.io)
