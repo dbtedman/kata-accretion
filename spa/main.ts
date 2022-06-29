@@ -10,9 +10,9 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 // Import any icons you want to use
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faCopyright);
+library.add(faMagnifyingGlass);
 
 const app = createApp(App);
 
