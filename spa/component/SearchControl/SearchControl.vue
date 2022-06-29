@@ -1,10 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+</script>
 
 <template>
     <div class="search-control">
         <div class="search-control__inner">
             <button class="search-control__icon">
-                <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+                <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
             </button>
             <input class="search-control__input" placeholder="Search" />
         </div>

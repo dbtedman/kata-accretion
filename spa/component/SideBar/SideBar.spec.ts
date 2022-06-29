@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
 import { mount } from "@vue/test-utils";
 
-import TopBar from "./TopBar.vue";
+import SideBar from "./SideBar.vue";
 
-describe("TopBar", () => {
+describe("SideBar", () => {
     it("renders properly", () => {
-        const wrapper = mount(TopBar, { props: {} });
+        const wrapper = mount(SideBar, { props: {} });
         expect(wrapper.exists()).toBe(true);
     });
 });
