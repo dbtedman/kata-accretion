@@ -9,5 +9,6 @@
 
 .nav-bar {
     width: $size-sidebar;
+    padding: $size-grid * 2;
 }
 </style>

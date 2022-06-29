@@ -9,9 +9,12 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 // Import any icons you want to use
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {
+    faMagnifyingGlass,
+    faTerminal,
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faMagnifyingGlass);
+library.add(faMagnifyingGlass, faTerminal);
 
 const app = createApp(App);
 
