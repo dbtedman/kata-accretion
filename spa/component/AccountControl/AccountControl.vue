@@ -1,14 +1,14 @@
 <script setup lang="ts"></script>
 
 <template>
-    <nav class="nav-bar"></nav>
+    <div class="account-control"></div>
 </template>
 
 <style scoped lang="scss">
 @import "./spa/theme/sizes";
 
-.nav-bar {
-    width: $size-sidebar;
-    padding: $size-grid * 2;
+.account-control {
+    padding: $size-grid;
+    display: flex;
 }
 </style>

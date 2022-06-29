@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import SearchControl from "@/component/SearchControl/SearchControl.vue";
 import ApplicationLogo from "@/component/ApplicationLogo/ApplicationLogo.vue";
+import AccountControl from "@/component/AccountControl/AccountControl.vue";
+import NotificationControl from "@/component/NotificationControl/NotificationControl.vue";
 </script>
 
 <template>
@@ -12,7 +14,10 @@ import ApplicationLogo from "@/component/ApplicationLogo/ApplicationLogo.vue";
             <div class="top-bar-left">
                 <SearchControl />
             </div>
-            <div class="top-bar-right">Account/Notifications</div>
+            <div class="top-bar-right">
+                <NotificationControl />
+                <AccountControl />
+            </div>
         </div>
     </header>
 </template>

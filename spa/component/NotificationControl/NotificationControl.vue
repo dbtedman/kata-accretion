@@ -1,14 +1,14 @@
 <script setup lang="ts"></script>
 
 <template>
-    <nav class="nav-bar"></nav>
+    <div class="notification-control"></div>
 </template>
 
 <style scoped lang="scss">
 @import "./spa/theme/sizes";
 
-.nav-bar {
-    width: $size-sidebar;
-    padding: $size-grid * 2;
+.notification-control {
+    padding: $size-grid;
+    display: flex;
 }
 </style>
