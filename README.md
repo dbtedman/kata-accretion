@@ -7,6 +7,7 @@
 [![sast workflow status](https://img.shields.io/github/workflow/status/dbtedman/kata-accretion/sast?style=for-the-badge&logo=github&label=sast)](https://github.com/dbtedman/kata-accretion/actions/workflows/sast.yml)
 ![languages: go and typescript](https://img.shields.io/badge/languages-go%20and%20typescript-blue.svg?style=for-the-badge)
 ![framework: vue](https://img.shields.io/badge/framework-vue-blue.svg?style=for-the-badge)
+[![MIT License](https://img.shields.io/github/license/dbtedman/kata-accretion?color=orange&style=for-the-badge)](https://github.com/dbtedman/kata-accretion/blob/main/LICENSE.md)
 
 Manage internal technical documentation that is enriched with live data accreted from your environment.
 
@@ -56,7 +57,6 @@ pnpm run test:e2e
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | `./.github/workflows` | GitHub Actions workflow definitions.                                                                                    |
 | `./cmd/accretion`     | The CLI is used for both running the server core and for interacting with the server core over GraphQL.                 |
-| `./cypress`           |                                                                                                                         |
 | `./graphql`           | The channel of communication with the server core used by all other interaction methods, along with 3rd party services. |
 | `./internal/domain`   | Code that defines the core application logic.                                                                           |
 | `./internal/gateway`  | Defines how the `domain` interfaces with external systems.                                                              |
