@@ -97,7 +97,7 @@ _Placeholder_
 
 #### [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)
 
-[Snyk](https://snyk.io) and [Github Security](https://github.com/features/security) scan Gradle and NPM dependencies for
+[Snyk](https://snyk.io) and [Github Security](https://github.com/features/security) scan Go and NPM dependencies for
 know vulnerabilities and create pull requests to resolve the vulnerabilities when available.
 
 #### [A07:2021-Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
