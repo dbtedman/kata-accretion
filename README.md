@@ -7,6 +7,7 @@
 [![sast workflow status](https://img.shields.io/github/workflow/status/dbtedman/kata-accretion/sast?style=for-the-badge&logo=github&label=sast)](https://github.com/dbtedman/kata-accretion/actions/workflows/sast.yml)
 ![languages: go and typescript](https://img.shields.io/badge/languages-go%20and%20typescript-blue.svg?style=for-the-badge)
 ![framework: vue](https://img.shields.io/badge/framework-vue-blue.svg?style=for-the-badge)
+[![MIT License](https://img.shields.io/github/license/dbtedman/kata-accretion?color=orange&style=for-the-badge)](https://github.com/dbtedman/kata-accretion/blob/main/LICENSE.md)
 
 Manage internal technical documentation that is enriched with live data accreted from your environment.
 
@@ -56,7 +57,6 @@ pnpm run test:e2e
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | `./.github/workflows` | GitHub Actions workflow definitions.                                                                                    |
 | `./cmd/accretion`     | The CLI is used for both running the server core and for interacting with the server core over GraphQL.                 |
-| `./cypress`           |                                                                                                                         |
 | `./graphql`           | The channel of communication with the server core used by all other interaction methods, along with 3rd party services. |
 | `./internal/domain`   | Code that defines the core application logic.                                                                           |
 | `./internal/gateway`  | Defines how the `domain` interfaces with external systems.                                                              |
@@ -97,7 +97,7 @@ _Placeholder_
 
 #### [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)
 
-[Snyk](https://snyk.io) and [Github Security](https://github.com/features/security) scan Gradle and NPM dependencies for
+[Snyk](https://snyk.io) and [Github Security](https://github.com/features/security) scan Go and NPM dependencies for
 know vulnerabilities and create pull requests to resolve the vulnerabilities when available.
 
 #### [A07:2021-Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
