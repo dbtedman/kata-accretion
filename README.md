@@ -43,12 +43,6 @@ make format
 make test
 ```
 
-### E2E Testing
-
-```shell
-pnpm run test:e2e
-```
-
 ## Design
 
 ### Repository Structure
