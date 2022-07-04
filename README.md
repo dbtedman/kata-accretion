@@ -60,6 +60,7 @@ pnpm run test:e2e
 | `./graphql`           | The channel of communication with the server core used by all other interaction methods, along with 3rd party services. |
 | `./internal/domain`   | Code that defines the core application logic.                                                                           |
 | `./internal/gateway`  | Defines how the `domain` interfaces with external systems.                                                              |
+| `./schema.graphql`    |                                                                                                                         |
 | `./spa`               | A Vue client application that interacts with the server core via GraphQL.                                               |
 
 ### Server Core
