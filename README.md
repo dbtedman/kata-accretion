@@ -120,7 +120,9 @@ _Placeholder_
 
 -   [Add Icons with Vue](https://fontawesome.com/docs/web/use-with/vue/add-icons)
 -   [Fontawesome Icons](https://fontawesome.com/icons)
+-   [Go GraphQL](https://github.com/graph-gophers/graphql-go)
 -   [Gofmt](https://pkg.go.dev/cmd/gofmt)
+-   [GraphQL](https://graphql.org)
 -   [Pinia](https://pinia.vuejs.org)
 -   [Prettier](https://prettier.io)
 -   [Vite](https://vitejs.dev)
