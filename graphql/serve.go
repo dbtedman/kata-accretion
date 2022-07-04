@@ -4,6 +4,7 @@ import (
 	"github.com/graph-gophers/graphql-go/relay"
 	"log"
 	"net/http"
+	"os"
 )
 
 func Serve() error {
@@ -22,7 +23,13 @@ func Serve() error {
 }
 
 func defineQueryHandler() (*relay.Handler, error) {
-	schema, err := DefineSchema()
+	fi, err := os.Open("schema.graphql")
+
+	if err != nil {
+		return nil, err
+	}
+
+	schema, err := DefineSchemaFromReader(fi)
 
 	if err != nil {
 		return nil, err

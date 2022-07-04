@@ -16,6 +16,8 @@
     "@fortawesome/fontawesome-svg-core": "6.1.1",
     "@fortawesome/free-solid-svg-icons": "6.1.1",
     "@fortawesome/vue-fontawesome": "3.0.1",
+    "graphql": "16.5.0",
+    "graphql-request": "4.3.0",
     "pinia": "2.0.14",
     "vue": "3.2.37",
     "vue-router": "4.0.16"

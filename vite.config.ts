@@ -17,4 +17,9 @@ export default defineConfig({
             "@": fileURLToPath(new URL("./spa", import.meta.url)),
         },
     },
+    server: {
+        proxy: {
+            "/query": "http://localhost:8080",
+        },
+    },
 });

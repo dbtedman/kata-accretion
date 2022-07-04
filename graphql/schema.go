@@ -2,23 +2,16 @@ package graphql
 
 import (
 	"github.com/graph-gophers/graphql-go"
+	"io"
+	"io/ioutil"
 )
 
-var schema = `
-schema {
-    query: Query
-    # mutation: Mutation
-}
+func DefineSchemaFromReader(in io.Reader) (*graphql.Schema, error) {
+	schema2, err := ioutil.ReadAll(in)
 
-# The query type, represents all of the entry points into our object graph
-type Query {
-    hello: String!
-}
+	if err != nil {
+		return nil, err
+	}
 
-# The mutation type, represents all updates we can make to our data
-#type Mutation {}
-`
-
-func DefineSchema() (*graphql.Schema, error) {
-	return graphql.ParseSchema(schema, &Resolver{}, graphql.UseStringDescriptions())
+	return graphql.ParseSchema(string(schema2), &Resolver{}, graphql.UseStringDescriptions())
 }

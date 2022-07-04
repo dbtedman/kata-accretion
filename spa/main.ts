@@ -13,6 +13,7 @@ import {
     faMagnifyingGlass,
     faTerminal,
 } from "@fortawesome/free-solid-svg-icons";
+import { hello } from "@/api/GraphQL/query/hello";
 
 library.add(faMagnifyingGlass, faTerminal);
 
@@ -22,3 +23,5 @@ app.use(createPinia());
 app.use(router);
 
 app.mount("#app");
+
+hello().then((response) => console.log({ response }));
