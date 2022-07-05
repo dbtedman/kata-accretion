@@ -13,17 +13,17 @@ import {
     faBoxArchive,
     faChartLine,
     faChevronDown,
+    faLayerGroup,
     faMagnifyingGlass,
-    faTerminal,
 } from "@fortawesome/free-solid-svg-icons";
 import { hello } from "@/api/GraphQL/query/hello";
 
 library.add(
-    faMagnifyingGlass,
-    faTerminal,
-    faChartLine,
     faBoxArchive,
-    faChevronDown
+    faChartLine,
+    faChevronDown,
+    faLayerGroup,
+    faMagnifyingGlass
 );
 
 const app = createApp(App);

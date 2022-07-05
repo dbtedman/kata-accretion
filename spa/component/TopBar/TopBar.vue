@@ -43,6 +43,7 @@ import NotificationControl from "@/component/NotificationControl/NotificationCon
     display: flex;
     flex-direction: row;
     flex: 1;
+    padding-left: $size-grid * 4;
 }
 
 .top-bar-left {

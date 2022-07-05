@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
     <div class="application-logo">
         <div class="application-logo__inner">
             <div class="application-logo__icon">
-                <FontAwesomeIcon icon="fa-solid fa-terminal" />
+                <FontAwesomeIcon icon="fa-solid fa-layer-group" />
             </div>
             <div class="application-logo__name">Accretion</div>
         </div>
@@ -31,7 +31,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-right: $size-grid;
+        margin-right: $size-grid * 1.5;
         color: $colour-highlight;
         font-size: 1.2em;
         line-height: 1em;
@@ -42,7 +42,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
         flex-direction: column;
         justify-content: center;
         font-size: 1.1em;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 1em;
         color: $colour-foreground-text;
     }
