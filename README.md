@@ -123,6 +123,7 @@ _Placeholder_
 -   [Vite](https://vitejs.dev)
 -   [Vitest](https://vitest.dev)
 -   [Vue Router](https://router.vuejs.org)
+-   [Vue Testing Utils](https://test-utils.vuejs.org)
 -   [Vue](https://vuejs.org)
 
 ## License

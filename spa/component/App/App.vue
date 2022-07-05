@@ -21,6 +21,7 @@ import PageFooter from "@/component/PageFooter/PageFooter.vue";
 <style lang="scss">
 @import "./spa/theme/colours";
 @import "./spa/theme/fonts";
+@import "./spa/theme/sizes";
 
 body,
 html {
@@ -55,5 +56,9 @@ html {
 
 .router-view {
     flex: 1;
+
+    main {
+        padding: $size-grid * 2;
+    }
 }
 </style>

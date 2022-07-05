@@ -10,12 +10,21 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import {
+    faBoxArchive,
+    faChartLine,
+    faChevronDown,
     faMagnifyingGlass,
     faTerminal,
 } from "@fortawesome/free-solid-svg-icons";
 import { hello } from "@/api/GraphQL/query/hello";
 
-library.add(faMagnifyingGlass, faTerminal);
+library.add(
+    faMagnifyingGlass,
+    faTerminal,
+    faChartLine,
+    faBoxArchive,
+    faChevronDown
+);
 
 const app = createApp(App);
 

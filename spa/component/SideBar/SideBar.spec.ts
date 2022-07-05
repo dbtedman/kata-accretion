@@ -2,10 +2,24 @@ import { describe, expect, it } from "vitest";
 import { mount } from "@vue/test-utils";
 
 import SideBar from "./SideBar.vue";
+import { createRouter, createWebHistory } from "vue-router";
+import { HOME_ROUTE, routes } from "@/router";
 
 describe("SideBar", () => {
-    it("renders properly", () => {
-        const wrapper = mount(SideBar, { props: {} });
+    it("renders properly", async () => {
+        const router = createRouter({
+            history: createWebHistory(),
+            routes: routes,
+        });
+        await router.push({ name: HOME_ROUTE });
+        await router.isReady();
+
+        const wrapper = mount(SideBar, {
+            props: {},
+            global: {
+                plugins: [router],
+            },
+        });
         expect(wrapper.exists()).toBe(true);
     });
 });
