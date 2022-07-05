@@ -5,6 +5,7 @@ specifiers:
   '@fortawesome/fontawesome-svg-core': 6.1.1
   '@fortawesome/free-solid-svg-icons': 6.1.1
   '@fortawesome/vue-fontawesome': 3.0.1
+  '@pinia/testing': 0.0.12
   '@rushstack/eslint-patch': 1.1.3
   '@types/jsdom': 16.2.14
   '@types/node': 16.11.41
@@ -44,6 +45,7 @@ dependencies:
   vue-router: 4.0.16_vue@3.2.37
 
 devDependencies:
+  '@pinia/testing': 0.0.12_pinia@2.0.14+vue@3.2.37
   '@rushstack/eslint-patch': 1.1.3
   '@types/jsdom': 16.2.14
   '@types/node': 16.11.41
@@ -496,6 +498,18 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
+    dev: true
+
+  /@pinia/testing/0.0.12_pinia@2.0.14+vue@3.2.37:
+    resolution: {integrity: sha512-OGJ5kZihiuNua9trREAVLiv8wAlxT2+gZAz3Cen1L4ch51MbSgY5/nbo9htYsP2my9dhbggBhecgYWlhejhRcQ==}
+    peerDependencies:
+      pinia: '>=2.0.14'
+    dependencies:
+      pinia: 2.0.14_j6bzmzd4ujpabbp5objtwxyjp4
+      vue-demi: 0.13.1_vue@3.2.37
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
     dev: true
 
   /@rollup/pluginutils/4.2.1:
@@ -3283,7 +3297,6 @@ packages:
         optional: true
     dependencies:
       vue: 3.2.37
-    dev: false
 
   /vue-eslint-parser/9.0.3_eslint@8.18.0:
     resolution: {integrity: sha512-yL+ZDb+9T0ELG4VIFo/2anAOz8SvBdlqEnQnvJ3M7Scq56DvtjY0VY88bByRZB0D4J0u8olBcfrXTVONXsh4og==}
