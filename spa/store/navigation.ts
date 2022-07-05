@@ -133,12 +133,36 @@ const initialState: NavigationGroup[] = [
     },
 ];
 
+interface NavigationState {
+    list: NavigationGroup[];
+}
+
 export const useNavigationStore = defineStore({
     id: "navigation",
-    state: () => ({
+    state: (): NavigationState => ({
         list: initialState,
     }),
-    getters: {},
+    getters: {
+        navigationLabelForRouteName() {
+            return (routeName: string) => {
+                let foundLabel: string | null = null;
+
+                console.log({ routeName });
+
+                this.list.forEach((navigationGroup) => {
+                    if (foundLabel === null) {
+                        navigationGroup.children.forEach((navigation) => {
+                            if (navigation.routeName === routeName) {
+                                foundLabel = navigation.label;
+                            }
+                        });
+                    }
+                });
+
+                return foundLabel;
+            };
+        },
+    },
     actions: {
         toggleCollapsed(targetToCollapseIndex: number) {
             this.list = this.list.map((navigationItem, navigationItemIndex) => {

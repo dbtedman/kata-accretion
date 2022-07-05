@@ -8,12 +8,12 @@ const searchRoutes = [
     {
         path: "/search",
         name: SEARCH_QUERY_ROUTE,
-        component: HomeView, // TODO: Replace Me!
+        component: () => import("../view/QueryView.vue"),
     },
     {
         path: "/search/saved",
         name: SEARCH_SAVED_ROUTE,
-        component: HomeView, // TODO: Replace Me!
+        component: () => import("../view/SavedQueriesView.vue"),
     },
 ];
 
@@ -38,87 +38,86 @@ const browseRoutes = [
     {
         path: "/browse/applications",
         name: BROWSE_APPLICATIONS_ROUTE,
-        component: HomeView, // TODO: Replace Me!
+        component: () => import("../view/BrowseView.vue"),
     },
     {
         path: "/browse/application-services",
         name: BROWSE_APPLICATION_SERVICES_ROUTE,
-        component: HomeView, // TODO: Replace Me!
+        component: () => import("../view/BrowseView.vue"),
     },
     {
         path: "/browse/branches",
         name: BROWSE_BRANCHES_ROUTE,
-        component: HomeView, // TODO: Replace Me!
+        component: () => import("../view/BrowseView.vue"),
     },
     {
         path: "/browse/clusters",
         name: BROWSE_CLUSTERS_ROUTE,
-        component: HomeView, // TODO: Replace Me!
+        component: () => import("../view/BrowseView.vue"),
     },
     {
         path: "/browse/coding-languages",
         name: BROWSE_CODING_LANGUAGES_ROUTE,
-        component: HomeView, // TODO: Replace Me!
+        component: () => import("../view/BrowseView.vue"),
     },
     {
         path: "/browse/deployments",
         name: BROWSE_DEPLOYMENTS_ROUTE,
-        component: HomeView, // TODO: Replace Me!
-    },
-    {
-        path: "/browse/environments",
-        name: BROWSE_ENVIRONMENTS_ROUTE,
-        component: HomeView, // TODO: Replace Me!
-    },
-    {
-        path: "/browse/issues",
-        name: BROWSE_ISSUES_ROUTE,
-        component: HomeView, // TODO: Replace Me!
-    },
-    {
-        path: "/browse/logs",
-        name: BROWSE_LOGS_ROUTE,
-        component: HomeView, // TODO: Replace Me!
-    },
-    {
-        path: "/browse/merge-requests",
-        name: BROWSE_MERGE_REQUESTS_ROUTE,
-        component: HomeView, // TODO: Replace Me!
-    },
-    {
-        path: "/browse/owners",
-        name: BROWSE_OWNERS_ROUTE,
-        component: HomeView, // TODO: Replace Me!
-    },
-    {
-        path: "/browse/products",
-        name: BROWSE_PRODUCTS_ROUTE,
-        component: HomeView, // TODO: Replace Me!
-    },
-    {
-        path: "/browse/repositories",
-        name: BROWSE_REPOSITORIES_ROUTE,
-        component: HomeView, // TODO: Replace Me!
-    },
-    {
-        path: "/browse/services",
-        name: BROWSE_SERVICES_ROUTE,
-        component: HomeView, // TODO: Replace Me!
-    },
-    {
-        path: "/browse/teams",
-        name: BROWSE_TEAMS_ROUTE,
-        component: HomeView, // TODO: Replace Me!
+        component: () => import("../view/BrowseView.vue"),
     },
     {
         path: "/browse/domains",
         name: BROWSE_DOMAINS_ROUTE,
-        component: HomeView, // TODO: Replace Me!
+        component: () => import("../view/BrowseView.vue"),
+    },
+    {
+        path: "/browse/environments",
+        name: BROWSE_ENVIRONMENTS_ROUTE,
+        component: () => import("../view/BrowseView.vue"),
+    },
+    {
+        path: "/browse/issues",
+        name: BROWSE_ISSUES_ROUTE,
+        component: () => import("../view/BrowseView.vue"),
+    },
+    {
+        path: "/browse/logs",
+        name: BROWSE_LOGS_ROUTE,
+        component: () => import("../view/BrowseView.vue"),
+    },
+    {
+        path: "/browse/merge-requests",
+        name: BROWSE_MERGE_REQUESTS_ROUTE,
+        component: () => import("../view/BrowseView.vue"),
+    },
+    {
+        path: "/browse/owners",
+        name: BROWSE_OWNERS_ROUTE,
+        component: () => import("../view/BrowseView.vue"),
+    },
+    {
+        path: "/browse/products",
+        name: BROWSE_PRODUCTS_ROUTE,
+        component: () => import("../view/BrowseView.vue"),
+    },
+    {
+        path: "/browse/repositories",
+        name: BROWSE_REPOSITORIES_ROUTE,
+        component: () => import("../view/BrowseView.vue"),
+    },
+    {
+        path: "/browse/services",
+        name: BROWSE_SERVICES_ROUTE,
+        component: () => import("../view/BrowseView.vue"),
+    },
+    {
+        path: "/browse/teams",
+        name: BROWSE_TEAMS_ROUTE,
+        component: () => import("../view/BrowseView.vue"),
     },
 ];
 
 export const HOME_ROUTE = "home";
-export const ABOUT_ROUTE = "about";
 
 export const routes = [
     {
@@ -128,14 +127,6 @@ export const routes = [
     },
     ...searchRoutes,
     ...browseRoutes,
-    {
-        path: "/about",
-        name: ABOUT_ROUTE,
-        // route level code-splitting
-        // this generates a separate chunk (About.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import("../view/AboutView.vue"),
-    },
 ];
 
 const router = createRouter({

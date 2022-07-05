@@ -57,8 +57,17 @@ html {
 .router-view {
     flex: 1;
 
+    // TODO: Should move into each view.
     main {
         padding: $size-grid * 2;
+
+        h1 {
+            padding: 0;
+            margin: 0;
+            color: $colour-background-text;
+            font-weight: 200;
+            font-size: $size-grid * 4;
+        }
     }
 }
 </style>
