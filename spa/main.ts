@@ -13,6 +13,7 @@ import {
     faBoxArchive,
     faChartLine,
     faChevronDown,
+    faChevronUp,
     faLayerGroup,
     faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
@@ -22,6 +23,7 @@ library.add(
     faBoxArchive,
     faChartLine,
     faChevronDown,
+    faChevronUp,
     faLayerGroup,
     faMagnifyingGlass
 );

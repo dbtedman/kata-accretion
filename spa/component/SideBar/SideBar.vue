@@ -32,6 +32,7 @@ interface NavigationItem {
 interface NavigationGroup {
     label: string;
     icon: string;
+    collapsed: boolean;
     children: NavigationItem[];
 }
 
@@ -41,6 +42,7 @@ const navigation = ref<NavigationGroup[]>([
     {
         label: "Dashboard",
         icon: "fa-solid fa-chart-line",
+        collapsed: false,
         children: [
             {
                 label: "Home",
@@ -51,6 +53,7 @@ const navigation = ref<NavigationGroup[]>([
     {
         label: "Search",
         icon: "fa-solid fa-search",
+        collapsed: false,
         children: [
             {
                 label: "Query",
@@ -65,6 +68,7 @@ const navigation = ref<NavigationGroup[]>([
     {
         label: "Browse",
         icon: "fa-solid fa-box-archive",
+        collapsed: false,
         children: [
             {
                 label: "Applications",
@@ -137,6 +141,22 @@ const navigation = ref<NavigationGroup[]>([
 const isCurrentRoute = (routeName: string): boolean => {
     return router.currentRoute.value.name === routeName;
 };
+
+const onToggleNavigation = (navigationGroupIndex: number) => {
+    console.log("onToggleNavigation", { navigationGroupIndex });
+
+    navigation.value = navigation.value.map(
+        (navigationItem, navigationItemIndex) => {
+            if (navigationItemIndex === navigationGroupIndex) {
+                return {
+                    ...navigationItem,
+                    collapsed: !navigationItem.collapsed,
+                };
+            }
+            return navigationItem;
+        }
+    );
+};
 </script>
 
 <template>
@@ -146,7 +166,10 @@ const isCurrentRoute = (routeName: string): boolean => {
             v-for="(navigationItem, navigationItemIndex) in navigation"
             :key="navigationItemIndex"
         >
-            <div class="nav-bar__item-label">
+            <div
+                class="nav-bar__item-label"
+                @click="onToggleNavigation(navigationItemIndex)"
+            >
                 <div class="nav-bar__item-label-icon">
                     <FontAwesomeIcon :icon="navigationItem.icon" />
                 </div>
@@ -154,10 +177,14 @@ const isCurrentRoute = (routeName: string): boolean => {
                     {{ navigationItem.label }}
                 </div>
                 <div class="nav-bar__item-label-collapse">
-                    <FontAwesomeIcon icon="fa-chevron-down" />
+                    <FontAwesomeIcon
+                        icon="fa-chevron-up"
+                        v-if="navigationItem.collapsed"
+                    />
+                    <FontAwesomeIcon icon="fa-chevron-down" v-else />
                 </div>
             </div>
-            <div class="nav-bar__sub-items">
+            <div class="nav-bar__sub-items" v-if="!navigationItem.collapsed">
                 <div
                     class="nav-bar__sub-item"
                     v-for="(
@@ -199,6 +226,7 @@ const isCurrentRoute = (routeName: string): boolean => {
         font-size: $size-grid * 2;
         color: $colour-background-text;
         flex: 1;
+        cursor: pointer;
     }
 
     &__item-label-icon {
