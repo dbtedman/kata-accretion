@@ -1,4 +1,4 @@
-# Security Policy
+# [Accretion](https://github.com/dbtedman/kata-accretion) - Security Policy
 
 > 💡 Organised around categories from the [OWASP Top 10 - 2021](https://owasp.org/www-project-top-ten/)
 > and [OWASP API Security Top 10 2019](https://owasp.org/www-project-api-security/) projects.
