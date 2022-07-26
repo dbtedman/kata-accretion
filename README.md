@@ -95,7 +95,7 @@ _No relevant mitigations are in place._
 
 ### [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)
 
--   [Snyk](https://snyk.io) scans Go and NPM dependencies for know vulnerabilities and creates pull requests to
+-   [Snyk](https://snyk.io) or [GitHub Dependabot](https://github.com/features/security) scans Go and NPM dependencies for know vulnerabilities and creates pull requests to
     resolve the vulnerabilities when available.
 
 ### [A07:2021-Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/) + [API2:2019 Broken User Authentication](https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa2-broken-user-authentication.md)
