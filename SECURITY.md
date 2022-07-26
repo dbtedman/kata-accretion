@@ -35,8 +35,7 @@ _No relevant mitigations are in place._
 
 ## Injection
 
-[A03:2021](https://owasp.org/Top10/A03_2021-Injection/)
-, [API8:2019](https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa8-injection.md)
+[A03:2021](https://owasp.org/Top10/A03_2021-Injection/), [API8:2019](https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa8-injection.md)
 
 _No relevant mitigations are in place._
 
@@ -48,8 +47,7 @@ _No relevant mitigations are in place._
 
 ## Security Misconfiguration
 
-[A05:2021](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/)
-, [API7:2019](https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa7-security-misconfiguration.md)
+[A05:2021](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/), [API7:2019](https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa7-security-misconfiguration.md)
 
 _No relevant mitigations are in place._
 
